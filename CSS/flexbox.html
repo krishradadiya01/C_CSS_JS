@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .krish1 {
+        display: flex;
+        background-color: rgb(120, 255, 30);
+      }
+
+      .krish1 > div {
+        background-color: #fa0101;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+      }
+
+      .krish2 {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(11, 102, 238);
+      }
+
+      .krish2 > div {
+        background-color: #d411fb;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish3 {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: rgb(10, 236, 240);
+      }
+
+      .krish3 > div {
+        background-color: #f10404;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish4 {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(228, 144, 10);
+      }
+
+      .krish4 > div {
+        background-color: #1a0efa;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish5 {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: rgb(255, 30, 233);
+      }
+
+      .krish5 > div {
+        background-color: #36d50f;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish6 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(215, 234, 5);
+      }
+
+      .krish6 > div {
+        background-color: #0105f9;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish7 {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: rgb(152, 87, 208);
+      }
+
+      .krish7 > div {
+        background-color: #26df5a;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish8 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        background-color: rgb(252, 30, 1);
+      }
+
+      .krish8 > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish9 {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: rgb(8, 227, 234);
+      }
+
+      .krish9 > div {
+        background-color: #f90606;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish10 {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(217, 210, 8);
+      }
+
+      .krish10 > div {
+        background-color: #112fc5;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish11 {
+        display: flex;
+        justify-content: flex-end;
+        background-color: rgb(187, 212, 237);
+      }
+
+      .krish11 > div {
+        background-color: #03fe4e;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish12 {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(44, 251, 3);
+      }
+
+      .krish12 > div {
+        background-color: #e892ed;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish13 {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(9, 240, 240);
+      }
+
+      .krish13 > div {
+        background-color: #1302fb;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish14 {
+        display: flex;
+        height: 200px;
+        align-items: center;
+        background-color: DodgerBlue;
+      }
+
+      .krish14 > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish15 {
+        display: flex;
+        height: 200px;
+        align-items: flex-start;
+        background-color: rgb(17, 102, 31);
+      }
+
+      .krish15 > div {
+        background-color: #220bf2;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish16 {
+        display: flex;
+        height: 200px;
+        align-items: flex-end;
+        background-color: rgb(178, 204, 131);
+      }
+
+      .krish16 > div {
+        background-color: #f800ec;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish17 {
+        display: flex;
+        height: 200px;
+        align-items: stretch;
+        background-color: rgb(2, 240, 244);
+      }
+
+      .krish17 > div {
+        background-color: #f80606;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish18 {
+        display: flex;
+        height: 200px;
+        align-items: baseline;
+        background-color: rgb(248, 232, 8);
+      }
+
+      .krish18 > div {
+        background-color: #1500f7;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish19 {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-between;
+        overflow: scroll;
+        background-color: rgb(1, 8, 15);
+      }
+
+      .krish19 > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 180px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish20 {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-around;
+        overflow: scroll;
+        background-color: rgb(205, 78, 19);
+      }
+
+      .krish20 > div {
+        background-color: #9320da;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish21 {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: stretch;
+        overflow: scroll;
+        background-color: rgb(233, 3, 129);
+      }
+
+      .krish21 > div {
+        background-color: #6eaaee;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish22 {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        overflow: scroll;
+        background-color: rgb(115, 233, 115);
+      }
+
+      .krish22 > div {
+        background-color: #1405eb;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish23 {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        overflow: scroll;
+        background-color: rgb(6, 18, 239);
+      }
+
+      .krish23 > div {
+        background-color: #e2d155;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .krish24 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        background-color: rgb(39, 209, 70);
+      }
+
+      .krish24 > div {
+        background-color: #eb4c74;
+        color: white;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Box</h1>
+    <div class="krish1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>Flex direction: Column</h1>
+    <div class="krish2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>Flex-direction: Column-reverse</h1>
+    <div class="krish3">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>Flex-direction: row</h1>
+    <div class="krish4">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>Flex-direction: row-reverse</h1>
+    <div class="krish5">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>flex-wrap: wrap</h1>
+    <div class="krish6">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+    </div>
+    <br />
+
+    <h1>Flex-wrap: nowrap</h1>
+    <div class="krish7">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+    </div>
+    <br />
+
+    <h1>Flex-wrap: wrap-reverse</h1>
+    <div class="krish8">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+    </div>
+    <br />
+
+    <h1>Flex-flow: row wrap</h1>
+    <div class="krish9">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+    </div>
+    <br />
+
+    <h1>justify-content: center</h1>
+    <div class="krish10">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>justify-content: flex-end</h1>
+    <div class="krish11">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>justify-content: flex-around</h1>
+    <div class="krish12">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>justify-content: flex-between</h1>
+    <div class="krish13">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>align-items: center</h1>
+    <div class="krish14">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>align-items: flex-start</h1>
+    <div class="krish15">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>align-items: flex-end</h1>
+    <div class="krish16">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>align-items: stretch</h1>
+    <div class="krish17">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>align-items: baseline</h1>
+    <div class="krish18">
+      <div><h1>1</h1></div>
+      <div><h6>6</h6></div>
+      <div><h3>3</h3></div>
+      <div><small>4</small></div>
+    </div>
+    <br />
+
+    <h1>align-content: space-between</h1>
+    <div class="krish19">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>align-content: space-around</h1>
+    <div class="krish20">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>align-content: stretch</h1>
+    <div class="krish21">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>align-content: flex-start</h1>
+    <div class="krish22">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>align-content: flex-end</h1>
+    <div class="krish23">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+
+    <h1>align-items: center</h1>
+    <div class="krish24">
+      <div></div>
+    </div>
+  </body>
+</html>

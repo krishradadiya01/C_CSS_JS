@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zindex</title>
+    <style>
+        div.first
+        {
+            color: red;
+            background-color: yellow;
+            width: 1500px;
+            height: 300px;
+            padding: 25px;
+            position: absolute;
+            z-index: -1;
+        }
+
+        div.second
+        {
+            color: white;
+            background-color: blue;
+            width: 300px;
+            height: 1200px;
+            margin: 12px;
+            padding: 25px;
+            position: absolute;
+            z-index: -2;
+        }
+
+        div.third
+        {
+            color: pink;
+            background-color: green;
+            width: 800px;
+            height: 400px;
+            padding: 25px;
+            position: absolute;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+      <div class="first">
+        <h1>My name is krish</h1>
+      </div>
+
+      <div class="second">
+        <h1>My name is krish</h1>
+      </div>
+
+      <div class="third">
+        <h1>My name is krish</h1>
+      </div>
+</body>
+</html>

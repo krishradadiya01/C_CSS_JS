@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            width: 100%;
+        }
+
+        .header {
+            background-color: rgb(4, 4, 4);
+            height: 60px;
+        }
+
+        img {
+            position: relative;
+            width: 120px;
+            bottom: -10px;
+            left: 12px;
+        }
+
+        .searchbar {
+            float: center;
+            display: block;
+            color: rgb(207, 27, 27);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            position: relative;
+            bottom: 53px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+
+        button {
+            background-color: rgb(237, 173, 11);
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(202, 149, 14);
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #222c3d;
+            position: relative;
+            float: left;
+            width: 100%;
+        }
+
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 12px 10px;
+            text-decoration: none;
+            font-size: 15px;
+            margin-bottom: 2px;
+            font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+        }
+
+        .topnav a:hover {
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+
+        .butt {
+            float: right;
+            color: white;
+            text-align: center;
+            padding: 12px 10px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-bottom: 2px;
+            position: relative;
+            right: 20px;
+            top: 6.5px;
+            font-family: Verdana, Tahoma, sans-serif;
+            cursor: pointer;
+        }
+
+        .butt a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 12px 12px;
+            text-decoration: none;
+            font-size: 15px;
+            margin-bottom: 2px;
+            font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+        }
+
+        .butt a:hover {
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+
+        .img2 {
+            position: relative;
+            top: -14px;
+            width: 1450px;
+            right: 210px;
+            margin-left: -20px;
+        }
+
+        .img3 {
+            position: relative;
+            bottom: 650px;
+            left: 830px;
+            width: 200px;
+            height: 300px;
+        }
+
+        .img4 {
+            position: relative;
+            bottom: 660px;
+            width: 170px;
+            height: 270px;
+            left: 730px;
+        }
+
+        .virat {
+            clear: both;
+            width: 23%;
+            height: 400px;
+            position: relative;
+            top: 420px;
+            border: 1px solid black;
+        }
+
+        .rohit {
+            clear: both;
+            width: 23%;
+            height: 400px;
+            position: relative;
+            left: 40px;
+            top: 420px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        h6 {
+            position: relative;
+            bottom: 800px;
+            left: 550px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h4 {
+            position: relative;
+            bottom: 820px;
+            left: 518px;
+            color: white;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        h1 {
+            position: relative;
+            bottom: 840px;
+            left: 525px;
+            color: rgb(255, 0, 0);
+            font-family: "Times New Roman", Times, serif;
+            font-size: 200%;
+        }
+
+        .cr7 {
+            position: relative;
+            bottom: 870px;
+            left: 515px;
+            color: rgb(255, 255, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 210%;
+        }
+
+        .lm10 {
+            position: relative;
+            bottom: 900px;
+            left: 520px;
+            color: rgb(255, 255, 255);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 110%;
+        }
+
+        .km10 {
+            position: relative;
+            bottom: 900px;
+            left: 522px;
+            color: rgb(255, 255, 255);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 70%;
+        }
+
+        .nj07 {
+            position: relative;
+            bottom: 908px;
+            left: 522px;
+            color: rgb(255, 255, 255);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 70%;
+        }
+
+        .op9 {
+            position: relative;
+            bottom: 947px;
+            left: 628px;
+            color: rgb(255, 255, 255);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 70%;
+        }
+
+        .op10 {
+            position: relative;
+            bottom: 960px;
+            left: 628px;
+            color: rgb(255, 255, 255);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 70%;
+        }
+
+        .ui10 {
+            position: relative;
+            bottom: 1000px;
+            left: 650px;
+            color: rgb(255, 255, 255);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 70%;
+        }
+
+        .ui11 {
+            position: relative;
+            bottom: 1008px;
+            left: 650px;
+            color: rgb(255, 255, 255);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 70%;
+        }
+
+        .kr13 {
+            position: relative;
+            bottom: 900px;
+            left: 515px;
+            width: 300px;
+            height: 100px;
+        }
+
+        .st15 {
+            clear: both;
+            width: 23%;
+            height: 400px;
+            position: relative;
+            left: -240px;
+            top: 420px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        .tr16 {
+            clear: both;
+            width: 23%;
+            height: 400px;
+            position: relative;
+            left: 1098px;
+            top: 15px;
+            border: 1px solid black;
+        }
+
+        .oop {
+            position: relative;
+            bottom: 428px;
+            left: 185px;
+            width: 250px;
+        }
+
+        .top {
+            position: relative;
+            top: 40px;
+            width: 330px;
+            height: 400px;
+            border: 1px solid black;
+
+        }
+
+        .bottom {
+            position: relative;
+            top: 40px;
+            width: 23%;
+            height: 400px;
+            left: 41px;
+            border: 1px solid black;
+        } 
+
+        .bracewell {
+            position: relative;
+            top: 40px;
+            width: 23%;
+            height: 400px;
+            left: 65px;
+            border: 1px solid black;
+        }
+
+        .hasa {
+            position: relative;
+            top: 40px;
+            width: 23%;
+            height: 400px;
+            left: 94px;
+            border: 1px solid black;
+        }
+
+        .text1 {
+            margin-top: -400px;
+        }
+
+       .line1{
+        display: flex;
+        margin-top: 25px;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(237, 237, 237);
+        }
+        .box {
+            width: 300px;
+            height: 410px;
+            background-color: white;
+            margin: 30px 0px;
+            padding: 20px;
+            font-size: 150%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .b71
+        {
+            width: 200px;
+        }
+        .u74
+        {
+            width: 235px;
+        }
+        .y65
+        {
+            width: 200px;
+        }
+        .i98
+        {
+            width: 235px;
+            padding-top: 20px;
+        }
+
+        .ronaldino
+        {
+            padding-bottom: 100px;
+            position: relative;
+            top: -5px;
+            left: 20px;
+            font-size: 150%;
+            background-color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        .wew
+        {
+            position: relative;
+            bottom: 100px;
+            width: 200px;
+        }
+
+        .ooi{
+            position: relative;
+            bottom: 100px;
+            width: 170px;
+            left: 30px;
+        }
+
+
+        .iio{
+            position: relative;
+            bottom: 100px;
+            width: 170px;
+            left: 50px;
+        }
+
+        .mr{
+            position: relative;
+            bottom: 100px;
+            width: 170px;
+            left: 75px;
+        }
+
+        .ms{
+            position: relative;
+            bottom: 100px;
+            width: 170px;
+            height: 150px;
+            left: 100px;
+        }
+
+         .miy{
+            position: relative;
+            bottom: 100px;
+            width: 170px;
+            height: 150px;
+            left: 130px;
+        }
+
+        .oyy{
+            position: relative;
+            bottom: 100px;
+            width: 170px;
+            height: 150px;
+            left: 160px;
+        }
+
+        .bgq
+        {
+            background-color: white;
+        }
+
+        .nmr
+        {
+            padding-bottom: 100px;
+            position: relative;
+            top: -7px;
+            left: 20px;
+            font-size: 150%;
+            background-color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+         .pop
+        {
+            position: relative;
+            bottom: 140px;
+            width: 150px;
+        } 
+
+        .uix
+        {
+            position: relative;
+            bottom: 140px;
+            width: 200px;
+            height: 250px;
+            left: 50px;
+        }
+
+         .pro
+        {
+            position: relative;
+            bottom: 140px;
+            width: 200px;
+            height: 250px;
+            left: 80px;
+        }
+
+        .let
+        {
+            position: relative;
+            bottom: 140px;
+            width: 200px;
+            height: 250px;
+            left: 105px;
+        }
+
+        .oil
+        {
+            position: relative;
+            bottom: 140px;
+            width: 200px;
+            height: 300px;
+            left: 128px;
+        }
+
+        .hacker
+        {
+            position: relative;
+            bottom: 140px;
+            width: 340px;
+            height: 300px;
+            left: 128px;
+        }
+
+        .main
+        {
+            padding-bottom: 100px;
+            position: relative;
+            top: -7px;
+            left: 20px;
+            font-size: 150%;
+            background-color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .end
+        {
+            position: relative;
+            bottom: 100px;
+            width: 200px;
+            left: 20px;
+        }
+
+        .mutual
+        {
+            position: relative;
+            bottom: 110px;
+            left: 20px;
+            font-size: 110%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .funds
+        {
+            position: relative;
+            bottom: 125px;
+            left: 20px;
+            font-size: 110%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .real
+        {
+            position: relative;
+            bottom: 140px;
+            left: 20px;
+            font-size: 110%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+         .robo
+        {
+            position: relative;
+            bottom: 155px;
+            left: 20px;
+            font-size: 110%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .myke
+        {
+            background-color: red;
+            width: 70px;
+            text-align: center;
+            position: relative;
+            left: 20px;
+            bottom: 168px;
+            color: white;
+            padding: 5px;
+        }
+
+        .lol
+        {
+            color: red;
+            position: relative;
+            left: 97px;
+            bottom: 207px;
+        }
+
+        .rupee
+        {
+            color: darkred;
+            position: relative;
+            left: 21px;
+            bottom: 238px;
+            font-size: 220%;
+        }
+
+        .eno
+        {
+            position: relative;
+            bottom: 659px;
+            width: 250px;
+            left: 270px;
+        }
+
+        .myself
+        {
+            position: relative;
+            bottom: 670px;
+            left: 269px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+            font-size: 110%;
+        }
+
+        .ti
+        {
+            position: relative;
+            bottom: 685px;
+            left: 269px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+            font-size: 110%;
+        }
+
+        .tis
+        {
+            position: relative;
+            bottom: 700px;
+            left: 269px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+            font-size: 110%;
+        }
+
+        .maar
+        {
+            position: relative;
+            bottom: 715px;
+            left: 269px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+            font-size: 110%;
+        }
+
+        .lakhaan
+        {
+            background-color: red;
+            width: 80px;
+            text-align: center;
+            position: relative;
+            left: 270px;
+            bottom: 728px;
+            color: white;
+            padding: 5px;
+        }
+
+        .types
+        {
+            color: red;
+            position: relative;
+            left: 360px;
+            bottom: 768px;
+        }
+
+        .khoke
+        {
+            position: relative;
+            bottom: 792px;
+            left: 273px;
+            font-size: 200%;
+            color: darkred;
+        }
+
+        .felt
+        {
+            position: relative;
+            bottom: 1205px;
+            left: 580px;
+            width: 210px;
+            height: 200px;
+        }
+        
+        .moso
+        {
+            position: relative;
+            bottom: 1220px;
+            left: 580px;
+            font-size: 120%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+        }
+
+        .monstar
+        {
+            color: darkred;
+            position: relative;
+            left: 583px;
+            bottom: 1255px;
+            font-size: 220%;
+        }
+
+        .rows
+        {
+            position: relative;
+            bottom: 1640px;
+            left: 840px;
+            width: 210px;
+            height: 207px;
+        }
+
+        .meta
+        {
+            position: relative;
+            bottom: 1655px;
+            left: 840px;
+            font-size: 120%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .monstar2
+        {
+            color: darkred;
+            position: relative;
+            left: 843px;
+            bottom: 1690px;
+            font-size: 220%;
+        }
+
+        .mgb
+        {
+            position: relative;
+            bottom: 2080px;
+            left: 1100px;
+            width: 320px;
+            height: 207px;
+        }
+
+        .uyy
+        {
+            position: relative;
+            bottom: 2100px;
+            left: 1100px;
+            font-size: 120%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .moral
+        {
+            background-color: red;
+            width: 80px;
+            text-align: center;
+            position: relative;
+            left: 1100px;
+            bottom: 2115px;
+            color: white;
+            padding: 5px;
+        }
+
+
+        .typedef
+        {
+            color: red;
+            position: relative;
+            left: 1190px;
+            bottom: 2155px;
+        }
+
+        .kake
+        {
+            position: relative;
+            bottom: 2182px;
+            left: 1100px;
+            font-size: 200%;
+            color: darkred;
+        }
+
+        .nindar
+        {
+            color: rgba(240, 255, 255, 0.69);
+            position: relative;
+            bottom: 2100px;
+        }
+
+        .more
+        {
+            position: relative;
+            bottom: 2080px;
+            left: 572px;
+            text-align: center;
+            color: black;
+            background-color: rgb(255, 196, 0);
+            padding: 10px 12px;
+            width: 300px;
+            font-size: 150%;
+            border-radius: 8px;
+        }
+
+        .more:hover
+        {
+            background-color: rgb(239, 171, 0);
+            cursor: pointer;
+        }
+
+        .tree
+        {
+            position: relative;
+            bottom: 2070px;
+            text-align: center;
+        }
+
+        .toy 
+        {
+            position: relative;
+            bottom: 2085px;
+            left: 640px;
+            display: inline;
+            text-align: center;
+            text-decoration: none;
+        }
+        .toy a:hover
+        {
+            color: red;
+            text-decoration: none;
+        }
+
+        .nindar2
+        {
+            color: rgba(240, 255, 255, 0.69);
+            position: relative;
+            bottom: 2050px;
+        }
+        
+        .flexmy
+        {
+            display: flex;
+            margin-top: 30px;
+            margin-right: 0;
+            justify-content: space-around;
+            position: relative;
+            bottom: 2090px;
+            font-size: 90%;
+            color: white;
+            line-height: 1.8;
+            background-color: #222c3d;
+            padding: 0px 170px;
+        }
+
+        .boxy
+        {
+            padding: 20px;
+            background-color: #222c3d;
+            height: 500px;
+            width: 500px;
+            margin-left: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img style="cursor: pointer;" src="https://i.pinimg.com/originals/47/b7/bd/47b7bdac4285ee24654ca7d68cf06351.png" />
+        <a href="#about" class="butt">Cart</a>
+        <a href="#about" class="butt">Orders</a>
+        <a href="#about" class="butt">Address</a>
+        <a href="#about" class="butt">Sign in</a>
+        <form class="searchbar">
+            <input type="text" placeholder=" Search..." name="search" size="80px" style="width: 700px; height: 40px" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <img class="img2" style="cursor: pointer;"
+            src="https://www.seekpng.com/png/full/49-498136_home-page-royal-blue-gradient-transparent.png" />
+        <img style="cursor: pointer;" class="img3" src="https://www.pngall.com/wp-content/uploads/5/Cool-Model-Man-PNG-HD-Image.png" />
+        <img style="cursor: pointer;" class="img4" src="https://www.pngall.com/wp-content/uploads/2016/05/Model.png" />
+    </div>
+    <div class="topnav">
+        <a href="#home">≣ All</a>
+        <a href="#news">Amazon miniTV</a>
+        <a href="#contact">Sell</a>
+        <a href="#about">Best Seller</a>
+        <a href="#about">Mobiles</a>
+        <a href="#about">Today's Deal</a>
+        <a href="#about">Customer Service</a>
+        <a href="#about">New Releases</a>
+        <a href="#about">Electronics</a>
+        <a href="#about">Prime</a>
+        <a href="#about">Home & Kitchen</a>
+    </div>
+
+    <div>
+        <img style="cursor: pointer;" src="https://m.media-amazon.com/images/I/51kTc+-vaXL.jpg" class="virat" />
+        <img style="cursor: pointer;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IN-Events/PD23/GW/Desktop_CC_V2_EN_1x._SY304_CB602878183_.jpg"
+            class="rohit" />
+
+        <img class="kr13" style="cursor: pointer;"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/980_AB_GIF_Wave03_SP_TopBanner_1242x450_1.jpg" />
+        <img class="st15" style="cursor: pointer;"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Electronics/Clearance/Clearance_store_Desktop_CC_2x._SY608_CB628315133_.jpg">
+
+        <img class="tr16" style="cursor: pointer;"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img16/malar/March23/HR_758X608._SY608_CB595115209_.jpg">
+        <img class="oop" src="https://cdn.grabon.in/gograbon/images/merchant/1686806625770.jpg">
+    </div>
+
+    <img style="cursor: pointer;" class="top" src="https://m.media-amazon.com/images/I/81RzcJRbA5L._AC_SY400_.jpg">
+    <img style="cursor: pointer;" class="bottom" src="https://m.media-amazon.com/images/I/71FqnBJbzfS._AC_SY400_.jpg">
+    <img style="cursor: pointer;" class="bracewell" src="https://m.media-amazon.com/images/I/81BvGU-i4jL._AC_SY400_.jpg">
+    <img style="cursor: pointer;" class="hasa" src="https://m.media-amazon.com/images/I/91c5Zd6zuWL._AC_SY400_.jpg">
+  
+
+    <div class="text1">
+        <h6>Amazon Fashion</h6>
+        <h4>❂ END OF SEASON ❂</h4>
+        <h1>⟪ S A L E ⟫</h1>
+        <p class="cr7">Starting ₹199</p>
+        <p class="lm10">Deals on top brands</p>
+        <p class="km10">FREE DELIVERY</p>
+        <p class="nj07">ON FIRST ORDER</p>
+        <p class="op9">⏐</p>
+        <p class="op10">⏐</p>
+        <p class="ui10">LATEST</p>
+        <p class="ui11">BRANDS</p>
+
+    </div>
+    </div>
+
+    <div class="line1">
+
+        <div class="box">
+            <p>Upto 25% off on itel S23</p>
+            <img style="cursor: pointer;" class="b71" src="https://m.media-amazon.com/images/I/41YkhXo7qgL._AC_SY400_.jpg" alt="Hritik Roshan">
+        </div>
+        
+        <div class="box">
+            <p>Up to 36% off on Bata, Hush Puppies & more </p>
+            <img style="cursor: pointer;" class="u74" src="https://m.media-amazon.com/images/I/81TBkVDGeGL._AC_SY400_.jpg">
+        </div>
+
+        <div class="box">
+            <p>Upto 12% off on Techno Spark 10 5G</p>
+            <img style="cursor: pointer;" class="y65" src="https://m.media-amazon.com/images/I/413gXukxurL._AC_SY400_.jpg">
+        </div>
+        
+        <div class="box">
+            <p>Up to 35% off on Wild Stone, Secret Tamptation & Code</p>
+            <img style="cursor: pointer;" class="i98" src="https://m.media-amazon.com/images/I/41RW3pQimIL._AC_SY400_.jpg">
+        </div>
+    </div>
+
+    <div class="bgq">
+     <p class="ronaldino"><b>Kitchen & Dining Products</b></p>
+     <img style="cursor: pointer;" class="wew" src="https://m.media-amazon.com/images/I/91g9SEaYIjL._AC_SY400_.jpg">
+     <img style="cursor: pointer;" class="ooi" src="https://m.media-amazon.com/images/I/51I7XytT6sL._AC_SY400_.jpg">
+     <img style="cursor: pointer;" class="iio" src="https://m.media-amazon.com/images/I/51KibG6UJZL._AC_SY400_.jpg">
+     <img style="cursor: pointer;" class="mr" src="https://m.media-amazon.com/images/I/71rpesdfykL._AC_SY400_.jpg">
+     <img style="cursor: pointer;" class="ms" src="https://m.media-amazon.com/images/I/812U3L0YFxL._AC_SY400_.jpg">
+     <img style="cursor: pointer;" class="miy" src="https://m.media-amazon.com/images/I/617SbvdpCoL._AC_SY400_.jpg">
+     <img style="cursor: pointer;" class="oyy" src="https://m.media-amazon.com/images/I/71C6VYB5nbL._AC_SY400_.jpg">
+     </div>
+
+     <div class="hnj">
+     <p class="nmr"><b>Up to 45% off | Furnitures from stores nearby</b></p>
+     <img style="cursor: pointer;" class="pop" src="https://m.media-amazon.com/images/I/51JsqdjgzOL._AC_SY400_.jpg">
+     <img style="cursor: pointer;" class="uix" src="https://m.media-amazon.com/images/I/71vhSZO3o8L._AC_SY400_.jpg">
+     <img style="cursor: pointer;" class="pro" src="https://m.media-amazon.com/images/I/616k+3RqfPL._AC_SY400_.jpg">
+     <img style="cursor: pointer;" class="let" src="https://m.media-amazon.com/images/I/61VgIm1rFTL._AC_SY400_.jpg">
+     <img style="cursor: pointer;" class="oil" src="https://m.media-amazon.com/images/I/41vN+X7oaIL._AC_SY400_.jpg">
+     <img style="cursor: pointer;" class="hacker" src="https://m.media-amazon.com/images/I/61g5HR1fkPL._AC_SY400_.jpg">
+     </div>
+
+     <div class="ouy">
+     <p class="main"><b>Inspidarkred by your browsing history</b></p>
+     <img style="cursor: pointer;" class="end" src="https://m.media-amazon.com/images/I/61Ri7c5-f7L._AC_SY400_.jpg">
+     <p class="mutual">Smooth Life M10 TWS</p>
+     <p class="funds">Blutooth Earbuds</p>
+     <p class="real">Wireless Blutooth</p>
+     <p class="robo">Waterproof Display</p>
+     <p class="myke">72% off</p>
+     <p class="lol">Deal</p>
+     <p class="rupee">₹184</p>
+     <img style="cursor: pointer;" class="eno" src="https://m.media-amazon.com/images/I/51RI7uO476L._AC_SY400_.jpg">
+     <p class="myself">URBAN CREW INI Candle Holder</p>
+     <p class="ti">for Home Decor | Candle</p>
+     <p class="tis">Stands for Home Decor |</p>
+     <p class="maar">Candle Stand (Pack of 3)</p>
+     <p class="lakhaan">90% off</p>
+     <p class="types">Deal</p>
+     <p class="khoke">₹299</p>
+     <img style="cursor: pointer;" class="felt" src="https://m.media-amazon.com/images/I/51BN3zNizoL._AC_SY400_.jpg">
+     <p class="moso">Porash Furniture™ Solid <br> Sheesham Wood Dining <br> Chair Set of 2 |<br>
+        Set Living Room
+     </p>
+     <p class="monstar">₹1450</p>
+     <img style="cursor: pointer;" class="rows" src="https://m.media-amazon.com/images/I/61yDg0Az6HL._AC_SY400_.jpg">
+     <p class="meta">TiMi Trends Abstract <br>Sculpture Statue Living<br> Room Office Shelf <br>Desktop Decoration Gold
+     <p class="monstar2">₹6599</p>
+     <img style="cursor: pointer;" class="mgb" src="https://m.media-amazon.com/images/I/71LyTzXGRlL._AC_SY400_.jpg">
+     <p class="uyy">FUNTERIOR Blueberry 2+2+1+1<br> Suede Fabric6 Seater Sofa Set<br> in Maroon and Dark
+     <p class="moral">50% off</p>
+     <p class="typedef">Deal</p>
+     <p class="kake">₹9999</p>
+     </div>
+ 
+     <div class="nindar">
+     <hr>
+     </div>
+  
+     <p class="tree">See personalized recommendations</p>
+     <p class="more">Sign in</p>
+     <p class="toy">New Customer? <a href="#">Start here.</a></p>
+
+     <div class="nindar2">
+     <hr>
+     </div>
+
+     <div class="flexmy">
+        <p class="boxy">Get to Know Us <br><br> About Us <br>Careers <br>Press Releases<br> Amazon Science</p>
+        <p class="boxy">Connect with Us<br><br> Facebook<br> Twitter<br> Instagram</p>
+        <p class="boxy">Make Money with Us<br><br> Sell on Amazon<br> Sell under Amazon Accelerator<br> 
+            Protect and Build Your Brand<br>Amazon Global Selling<br> Become an Affiliate<br> Fulfilment by
+            Amazon<br> Advertise Your Products<br> Amazon Pay on Merchants<br>
+        <p class="boxy"> Let Us Help You<br><br> COVID-19 and Amazon<br> Your Account<br> Returns Centre<br>
+            100% Purchase Protection<br> Amazon App Download<br> Help</p>
+    </body>
+</html>
