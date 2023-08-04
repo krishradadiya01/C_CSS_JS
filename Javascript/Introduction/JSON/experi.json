@@ -1,0 +1,9 @@
+
+{"workers":[
+   {"fname":"krish", "sname":"radadiya", "age": 17} ,
+   {"fname":"snaket", "sname":"talaviya", "age": 17} ,
+   {"fname":"viren", "sname":"radadiya", "age": 24},
+   {"name": "John"},
+   {"age": 30},
+   {"city": "New York"}
+]}

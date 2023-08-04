@@ -1,0 +1,23 @@
+let t = + "w";
+console.log(typeof t);
+
+let w = String(123);
+console.log(w);
+
+
+let cd = Number(1227);
+console.log(cd);
+
+
+let q = String(true);
+console.log(q);
+
+
+let a = 22;
+let b = a.toString();
+console.log(b);
+
+
+let  s = new Date();
+let y = s.toString();
+console.log(y);

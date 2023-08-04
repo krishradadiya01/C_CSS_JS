@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+
+      .kisu {
+        background-color: red;
+        color: white;
+        padding: 20px;
+        width: 200px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 40px;
+      }
+
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="kisu" onmousedown="krish(this)" onmouseup="sanket(this)"></div>
+
+    <h2 onclick="this.innerHTML='Virat Kohli'">Here is a king of cricket</h2>
+
+    <button onclick="displayDate()">Time</button>
+
+    <input type="text" id="fname" onchange="upperCase()">
+
+    <script>
+      function krish(obj) {
+        obj.innerHTML = "Chiku";
+      }
+
+      function sanket(obj) {
+        obj.innerHTML = "Virat Kohli";
+      }
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+
+      function jiol() {
+        const x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+      }
+    </script>
+
+    <p id="demo"></p>
+  </body>
+</html>

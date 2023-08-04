@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="button" value="Click Here!" onclick="abc()">
+    <input type="button" value="Please Click Please" onclick="xyz()">
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+    <input type="button" value="Click kar idhar" onclick="varo = setInterval(koila , 5000)">
+    <input type="button" value="Click kar stop " onclick="clearInterval(varo)">
+
+
+    <script>
+function abc()
+{
+    alert("You Were already Died in 2010 \n You can not Die Today");
+}
+
+
+function xyz()
+{
+    let hji;
+    if (confirm("Press a Button")) {
+        hji = "You Pressed OK";
+    } else
+    {
+        hji = "You Pressed Cancel";
+    };
+
+    document.getElementById("demo").innerHTML = hji;
+}
+
+
+
+
+function koila()
+{
+    let bio;
+    let per = prompt("Please enter your name:" , "Krish Radadiya");
+    if (per == null || per == "") {
+        bio = "Please enter valid name";
+    } else{
+        bio = "Hello" + " " + per + " " + "How are You";
+    }
+
+    document.getElementById("demo2").innerHTML = bio;
+};
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JS Window</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+
+
+<input type="button" value="Let's go" onclick="locationk()">
+<input type="button" value="Back" onclick="historyk()">
+
+<script>
+
+document.getElementById("demo").innerHTML =
+"window width: " + window.innerWidth + "px<br>" +
+"window height: " + window.innerHeight + "px<br>";
+
+
+
+
+
+document.getElementById("demo2").innerHTML =
+"screen width: " + screen.width + "px<br>" +
+"screen height: " + screen.height + "px";
+
+
+
+
+
+document.getElementById("demo3").innerHTML =
+"Available width: " + screen.availWidth + "px<br>" +
+"Available height: " + screen.availHeight + "px<br>" +
+"Screen color depth is " + screen.colorDepth + "px<br>" +
+"Screen Pixel Depth: " + screen.pixelDepth + "px<br>"
+
+
+
+
+
+document.getElementById("demo4").innerHTML = 
+"The full URL of this page is:<br>" + window.location.href + "<br>" +
+"Page hostname is " + window.location.hostname + "<br>" +
+"Page path is " + window.location.pathname + "<br>" +
+"The page protocol is: " + window.location.protocol + "<br>" +
+"Port number is " + window.location.port + "<br>";
+
+function locationk()
+{
+    window.location.assign("https://www.ferrari.com/en-IN")
+}
+
+function historyk()
+{
+    window.history.forward();
+}
+
+
+
+document.getElementById("demo5").innerHTML = 
+"navigator.appName is " + navigator.appName + "<br>" +
+"navigator.cookieEnabled is " + navigator.cookieEnabled + "<br>" +
+"navigator.appCodeName is " + navigator.appCodeName + "<br>" +
+"navigator.product is " + navigator.product;
+
+
+document.getElementById("demo6").innerHTML = "UserAgent" + " " + navigator.userAgent;
+document.getElementById("demo7").innerHTML = "AppVersion" + "  " +  navigator.appVersion;
+document.getElementById("demo8").innerHTML = "Language" + " " + navigator.language;
+
+
+
+document.getElementById("demo9").innerHTML = 
+"navigator.platform is " + navigator.platform;
+
+document.getElementById("demo10").innerHTML =
+"navigator.onLine is " + navigator.onLine;
+
+
+document.getElementById("demo11").innerHTML =
+"javaEnabled is " + navigator.javaEnabled();
+
+</script>
+</body>
+</html>

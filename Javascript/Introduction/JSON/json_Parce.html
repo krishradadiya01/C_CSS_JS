@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script>
+
+
+const fogg = '{"name": "krish" , "age": 17 , "sname": "radadiya"}'
+const ohk = JSON.parse(fogg)
+document.getElementById("demo").innerHTML = ohk.name;
+
+
+
+
+const text2 = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+const myArr = JSON.parse(text2);
+document.getElementById("demo1").innerHTML = myArr[3];
+
+
+
+const kol = '{"fname": "virat" , "sname": "kohli" , "Jno": 18 , "birth": "2006-04-05"}'
+const huj = JSON.parse(kol)
+huj.birth = new Date(huj.birth);
+document.getElementById("demo3").innerHTML = huj.fname + ", " + huj.birth
+
+
+
+
+const mirror = '{"fname": "cristiano" , "sname": "ronaldo" , "jno": "07" , "birth": "1999-08-07"}'
+const koil = JSON.parse(mirror , function (key , value)
+{
+    if (key == "birth") {
+        return new Date(value);
+    } else {
+        return value;
+    }
+});
+
+document.getElementById("demo4").innerHTML = koil.fname + ", " + koil.birth;
+
+
+
+const txt = '{"name": "krish" , "sname": "radadiya",  "age": "function () {return 789;}" , "sport": "cricket"}'
+const obj = JSON.parse(txt)
+obj.age = eval("("+ obj.age +")");
+document.getElementById("demo5").innerHTML = obj.sname + ", " + obj.age();
+
+</script>
+
+</body>
+</html>

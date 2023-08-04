@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC</title>
+  </head>
+  <body>
+    <p id="demo3"></p>
+    <p id="demo1"></p>
+    <p id="demo4"></p>
+
+    <script>
+    //   const saho = { name: "Krish", age: 678, jno: "18" };
+    //   const jole = JSON.stringify(saho);
+    //   localStorage.setItem("Oppenheimer", jole);
+
+    //   let top = localStorage.getItem("Oppenheimer");
+    //   let bottom = JSON.parse(top);
+    //   document.getElementById("demo").innerHTML = bottom.age;
+
+
+
+
+      const kisu = {name: "kisu" , sname: "radadiya" , rollno: 12 ,today: new Date()}
+      const ruby = JSON.stringify(kisu)
+      document.getElementById("demo1").innerHTML = ruby;
+
+
+
+
+
+
+      const sanklu = {name: "leonel" , sname: "messi" , topic: function (){return 30;} , state: "rajasthan"}
+      const devo = JSON.stringify(sanklu)
+      document.getElementById("demo3").innerHTML = devo;
+
+
+
+
+      const loki = {name: "sanket" , rollno: 23 , age: function () {return 90;} , state: "gujarat"}
+      loki.age = loki.age.toString();
+      const frog = JSON.stringify(loki);
+      document.getElementById("demo4").innerHTML = frog;
+    
+    </script>
+  </body>
+</html>
+
+

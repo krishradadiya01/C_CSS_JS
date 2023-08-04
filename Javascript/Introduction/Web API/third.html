@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">
+    <input id="12" type="number" max="1000">
+    <button onclick="sanklu()">Done</button>
+
+
+    <p id="demo2">
+    <input id="121" type="number" min="100">
+    <button onclick="devo()">Done</button>
+
+    <script>
+        function sanklu()
+    {
+        let jk;
+
+        if (document.getElementById("12").validity.rangeOverflow) {
+            jk = "Abe kam value daal";
+        } else
+        {
+            jk = "Ekdam Badhiya";
+        }
+
+        document.getElementById("demo").innerHTML = jk;
+    }
+
+
+
+
+
+
+    function devo()
+    {
+        let op;
+
+        if(document.getElementById("121").validity.rangeUnderflow)
+        {
+            op = "Abe thodi to zyada value daal";
+        } else{
+            op = "Ekdam Badhiya";
+        }
+
+        document.getElementById("demo2").innerHTML = op;
+    }
+    </script>
+</body>
+</html>

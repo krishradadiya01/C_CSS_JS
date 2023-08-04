@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="j()">Location</button>
+    <p id="demo"></p>
+
+    <script>
+      const k = document.getElementById("demo");
+
+      function j() {
+        try {
+          navigator.geolocation.getCurrentPosition(krish);
+        } catch {
+          k.innerHTML = err;
+        }
+      }
+
+      function krish(red) {
+        k.innerHTML =
+          "Latitude:" +
+          " " +
+          red.coords.latitude +
+          "<br>" +
+          "Longitude:" +
+          " " +
+          red.coords.longitude;
+      }
+    </script>
+  </body>
+</html>

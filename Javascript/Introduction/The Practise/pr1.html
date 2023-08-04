@@ -1,0 +1,17 @@
+<script>
+  function ask(query, yes, no) {
+    if (confirm(query)) yes();
+    else no();
+  }
+
+  function showOK() {
+    alert("Welcome to the New World");
+  }
+
+  function showCancel() {
+    alert("You are not eligible for voting");
+  }
+
+  ask("Do you want to go to the new world ?", showOK, showCancel);
+</script>
+

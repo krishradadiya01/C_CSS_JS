@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="back()">Back</button>
+    <button onclick="forward()">forward</button>
+    <button onclick="go()">Go Back 2 Page</button>
+    <button onclick="length()">length</button>
+
+
+    <script>
+        function back()
+        {
+            window.history.back();
+        }
+
+
+        function forward()
+        {
+            window.history.forward();
+        }
+
+
+        function go()
+        {
+            window.history.go();
+        }
+
+        
+        function length()
+        {
+            window.history.length();
+        }
+        </script>
+</body>
+</html>
