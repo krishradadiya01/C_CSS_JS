@@ -60,4 +60,4 @@ class Card {
 
 const asa = new Card("Mercedes");
 
-console.log(asa.present()
+console.log(asa.present())
