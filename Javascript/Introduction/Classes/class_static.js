@@ -10,6 +10,6 @@ class Zombie {
   }
 }
 
-const jems = new Zombie("Envitable");      //  Don't work because of Static (sthir) keyword.
+const jems = new Zombie("Envitable")      //  Don't work because of Static (sthir) keyword.
 
-console.log(Zombie.present2());
+console.log(Zombie.present2())
