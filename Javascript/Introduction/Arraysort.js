@@ -36,6 +36,4 @@ const arrey = [12 , 34 , 56 , 778];
 console.log(Math.max.apply(null , arrey));
 
 const cricket = [12 , 34 , 56 , 778];
-console.log(Math.min.apply(null, cricket));
-
-
+console.log(Math.min.apply(null, cricket))
